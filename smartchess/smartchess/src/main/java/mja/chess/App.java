@@ -7,11 +7,13 @@ import java.util.Scanner;
  *
  */
 public class App {
+    public static gameLog gameL;
+
     public static void main(String[] args) {
         System.out.println("Hello World!");
+        gameL = new gameLog();
+        Board gameBoard = new Board(gameL);
 
-        Board gameBoard = new Board();
-        gameLog gameLog = new gameLog();
         boolean playing = true;
         Scanner scan = new Scanner(System.in);
         while (playing) {
@@ -20,7 +22,7 @@ public class App {
 
             // return true for valid move
             if (gameBoard.turn(move)) {
-                gameLog.addMove(move);
+                gameL.addMove(move);
             }
             gameBoard.print();
         }

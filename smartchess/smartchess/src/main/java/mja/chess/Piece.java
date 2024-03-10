@@ -11,26 +11,6 @@ public class Piece {
     public Piece() {
         this.type = "  ";
     }
-    /*
-     * public String checkMoveLegality(String t, int i, int j, String tak, gameLog
-     * gl) {
-     * boolean leg = true;
-     * if (t == "wp") {
-     * if (i != 1) {
-     * return false;
-     * }
-     * if (j == 0) {
-     * return true;
-     * }
-     * if (j == 1 || j == -1) {
-     * if (tak != "  ") {
-     * return true;
-     * }
-     * if (gl.lastMove() == )
-     * }
-     * }
-     * }
-     */
 
     public String setType(int i, int j) {
         if (i == 1) {
